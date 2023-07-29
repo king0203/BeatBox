@@ -15,19 +15,19 @@ export const cryptoApi = createApi({
       query: (count) => createRequest(`/coins?limit=${count}`),
     }),
 
-    // getCryptoDetails: builder.query({
-    //   query: (coinId) => createRequest(`/coin/${coinId}`),
-    // }),
+    getCryptoDetails: builder.query({
+      query: (coinId) => createRequest(`/coin/${coinId}`),
+    }),
 
-    // getCryptoHistory: builder.query({
-    //   query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timeperiod=${timeperiod}`),
-    // }),
+    getCryptoHistory: builder.query({
+      query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timeperiod=${timeperiod}`),
+    }),
 
   }),
 });
 
 export const {
   useGetCryptosQuery,
-//   useGetCryptoDetailsQuery,
-//   useGetCryptoHistoryQuery,
+  useGetCryptoDetailsQuery,
+  useGetCryptoHistoryQuery,
 } = cryptoApi;
