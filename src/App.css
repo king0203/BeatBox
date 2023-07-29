@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-a:hover{
-    color: var(--pink) !important;
-}
-
 .app{
     display: flex;
     overflow: hidden;
@@ -49,7 +45,7 @@ a:hover{
     background-color: #001529;
     display: flex;
     padding: 20px;
-    align-items: center;
+    align-items: start;
     width: 100%;
 }
 .logo{
